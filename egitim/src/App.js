@@ -12,6 +12,7 @@ class App extends Component {
         <hr/>
         <AddUser/>
         <Users/>
+        <Users/>
       </div>
   )};
 }

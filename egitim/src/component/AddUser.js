@@ -5,7 +5,7 @@ const FadeIn = ({ isVisible, children }) => {
   const styles = useSpring({
     opacity:isVisible ? 1 : 0,
     y: isVisible ? 0: 1,
-    height: isVisible ? window.innerHeight : 0
+    height: isVisible ? 500  : 0
   })
 
   return <animated.div style={styles}>{children}</animated.div>
@@ -23,7 +23,7 @@ class AddUser extends Component {
     return (
       <div className='container'>
       <button type="button" onClick={this.changeVisibility} className="btn btn-info col-12 my-2">
-      {visible ? "hide Form": "Show Form"    }
+      {visible ? "hide Form": "Show Form"}
       </button>
       <FadeIn isVisible={visible}>
       <div className='card'>
